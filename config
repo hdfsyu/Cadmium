@@ -5,8 +5,10 @@
 # One of: arm64-chromebook, arm32-chromebook
 if [ "$RELEASE" = "" ]; then
 	FLAV=arm64-chromebook
+	TARGET=jacuzzi-juniper
 else
 	FLAV=$RELEASE
+	TARGET=$RELEASE
 fi
 
 # RootFS type
